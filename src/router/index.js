@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Home from '../views/Home.vue'
-import Test1 from '../views/dy/Test1.vue'
-import Test2 from '../views/dy/Test2.vue'
+import Test1 from '../views/dy/Dylist.vue'
+import Test2 from '../views/dy/Dyadd.vue'
 
 Vue.use(VueRouter)
 
@@ -16,16 +16,16 @@ const routes = [
   },
   {
     path: '/home',
-    name: '导航一',
+    name: '抖音',
     component: Home,
     children:[
       {
-        path:'/test1',
-        name:'选项1',
+        path:'/Dylist',
+        name:'订单列表',
         component:Test1
       },{
-        path:'/test2',
-        name:'选项2',
+        path:'/Dyadd',
+        name:'添加订单',
         component:Test2
       }
     ]

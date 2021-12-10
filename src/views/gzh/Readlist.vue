@@ -1,11 +1,11 @@
 <template>
     <div>
-        Test2
+        Gzhlist
     </div>
 </template>
 <script>
 export default {
-    name:"Test2"
+    name:"Gzhlist"
 }
 </script>
 <style scoped>

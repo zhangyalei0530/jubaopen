@@ -1,11 +1,11 @@
 <template>
     <div>
-        Test1
+        Videoadd
     </div>
 </template>
 <script>
 export default {
-    name:"Test1"
+    name:"Videoadd"
 }
 </script>
 <style scoped>

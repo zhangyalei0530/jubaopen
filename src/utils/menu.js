@@ -36,7 +36,19 @@ export const formatRoutes = (routes) =>{
             iconCls:iconCls,
             children:children,
             component(resolve){
-                require(['../views'+component+'.vue'],resolve);
+                if(component.startsWith('Dy')){
+                    require(['../views/dy/'+component+'.vue'],resolve);
+                }else if(component.startsWith('Ks')){
+                    require(['../views/ks/'+component+'.vue'],resolve);
+                }else if(component.startsWith('Read')){
+                    require(['../views/read/'+component+'.vue'],resolve);
+                }else if(component.startsWith('Video')){
+                    require(['../views/video/'+component+'.vue'],resolve);
+                }else if(component.startsWith('Gzh')){
+                    require(['../views/gzh/'+component+'.vue'],resolve);
+                }else{
+                    require(['../views/'+component+'.vue'],resolve);
+                }
             }
         }
         fmtRoutes.push(fmRouter)

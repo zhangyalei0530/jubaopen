@@ -5,7 +5,7 @@
       <el-container>
         <el-aside width="200px">
           <el-menu router>
-            <el-submenu index="1" v-for="(item,index) in this.$router.options.routes" :key="index"  v-if="!item.hidden">
+            <el-submenu index="1" v-for="(item,index) in this.$router.options.routes" :key="index" v-if="!item.hidden">
               <template slot="title">
                 <i class="el-icon-message"></i>
                 <span>{{item.name}}</span>
